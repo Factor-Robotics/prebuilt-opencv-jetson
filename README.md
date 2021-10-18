@@ -1,5 +1,5 @@
 # prebuilt-opencv-jetson
-Prebuilt OpenCV with CUDA for Jetson
+Prebuilt OpenCV with CUDA for Jetson derived from official Docker image
 ```
 General configuration for OpenCV 4.5.0 =====================================
   Version control:               4.5.0
