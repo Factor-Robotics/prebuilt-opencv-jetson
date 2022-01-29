@@ -1,15 +1,15 @@
 # prebuilt-opencv-jetson
-Prebuilt OpenCV witi CUDA for Jetson
+Prebuilt OpenCV with CUDA for Jetson derived from official Docker image
 ```
-General configuration for OpenCV 4.5.0 =====================================
-  Version control:               4.5.0
+General configuration for OpenCV 4.4.0 =====================================
+  Version control:               4.4.0
 
   Extra modules:
     Location (extra):            /opt/opencv_contrib/modules
-    Version control (extra):     4.5.0
+    Version control (extra):     4.4.0
 
   Platform:
-    Timestamp:                   2021-07-19T21:05:54Z
+    Timestamp:                   2022-01-29T08:11:06Z
     Host:                        Linux 4.9.201-tegra aarch64
     CMake:                       3.10.2
     CMake generator:             Unix Makefiles
@@ -34,11 +34,11 @@ General configuration for OpenCV 4.5.0 =====================================
     Linker flags (Debug):        -Wl,--gc-sections -Wl,--as-needed  
     ccache:                      NO
     Precompiled headers:         NO
-    Extra dependencies:          m pthread cudart_static dl rt nppc nppial nppicc nppicom nppidei nppif nppig nppim nppist nppisu nppitc npps cublas cudnn cufft -L/usr/local/cuda/lib64 -L/usr/lib/aarch64-linux-gnu
+    Extra dependencies:          m pthread cudart_static -lpthread dl rt nppc nppial nppicc nppicom nppidei nppif nppig nppim nppist nppisu nppitc npps cublas cudnn cufft -L/usr/local/cuda/lib64 -L/usr/lib/aarch64-linux-gnu
     3rdparty dependencies:
 
   OpenCV modules:
-    To be built:                 alphamat aruco bgsegm bioinspired calib3d ccalib core cudaarithm cudabgsegm cudacodec cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping cudev datasets dnn dnn_objdetect dnn_superres dpm face features2d flann freetype fuzzy gapi hfs highgui img_hash imgcodecs imgproc intensity_transform line_descriptor mcc ml objdetect optflow phase_unwrapping photo plot python3 quality rapid reg rgbd saliency shape stereo stitching structured_light superres surface_matching text tracking video videoio videostab xfeatures2d ximgproc xobjdetect xphoto
+    To be built:                 alphamat aruco bgsegm bioinspired calib3d ccalib core cudaarithm cudabgsegm cudacodec cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping cudev datasets dnn dnn_objdetect dnn_superres dpm face features2d flann freetype fuzzy gapi hfs highgui img_hash imgcodecs imgproc intensity_transform line_descriptor ml objdetect optflow phase_unwrapping photo plot python3 quality rapid reg rgbd saliency shape stereo stitching structured_light superres surface_matching text tracking video videoio videostab xfeatures2d ximgproc xobjdetect xphoto
     Disabled:                    world
     Disabled by dependency:      -
     Unavailable:                 cnn_3dobj cvv hdf java js julia matlab ovis python2 sfm ts viz
@@ -59,7 +59,7 @@ General configuration for OpenCV 4.5.0 =====================================
     WEBP:                        build (ver encoder: 0x020f)
     PNG:                         /usr/lib/aarch64-linux-gnu/libpng.so (ver 1.6.34)
     TIFF:                        build (ver 42 - 4.0.10)
-    JPEG 2000:                   build (ver 2.3.1)
+    JPEG 2000:                   build Jasper (ver 1.900.1)
     OpenEXR:                     build (ver 2.3.0)
     HDR:                         YES
     SUNRASTER:                   YES
